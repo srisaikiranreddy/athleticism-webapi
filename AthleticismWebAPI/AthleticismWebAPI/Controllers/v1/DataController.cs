@@ -16,9 +16,12 @@ namespace AthleticismWebAPI.Controllers
         }
 
         [HttpGet(Name = nameof(GetDatabaseTime))]
-        public ActionResult GetDatabaseTime(ApiVersion version)
+        public ActionResult GetDatabaseTime()
         {
-            return Ok("Working");
+            return Ok(new
+            {
+                text = "Working"
+            });
         }
     }
 }

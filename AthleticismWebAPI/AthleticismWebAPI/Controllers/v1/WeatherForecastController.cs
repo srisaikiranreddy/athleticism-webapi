@@ -36,5 +36,14 @@ namespace AthleticismWebAPI.Controllers
             })
             .ToArray();
         }
+
+        [HttpGet(Name = nameof(GetDatabaseTime))]
+        public ActionResult GetDatabaseTime()
+        {
+            return Ok(new
+            {
+                text = "Working"
+            });
+        }
     }
 }
