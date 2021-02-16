@@ -1,4 +1,5 @@
 using AthleticismWebAPI.CommonHelper;
+using AthleticismWebAPI.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -9,8 +10,10 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json.Serialization;
+using Microsoft.EntityFrameworkCore;
 
 using Swashbuckle.AspNetCore.SwaggerGen;
+using AthleticismWebAPI.DataAccess;
 
 namespace AthleticismWebAPI
 {
@@ -26,14 +29,21 @@ namespace AthleticismWebAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            
 
             services.AddControllers()
                 .AddNewtonsoftJson(options =>
                        options.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver())
-                            .SetCompatibilityVersion(CompatibilityVersion.Version_3_0); ;
+                            .SetCompatibilityVersion(CompatibilityVersion.Version_3_0);           
+
+            services.AddDbContext<PGDBContext>(options => options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
+
+            services.AddScoped<IReviewAccessProvider, ReviewAccessProvider>();
+
             services.AddVersioning();
             services.AddTransient<IConfigureOptions<SwaggerGenOptions>, SwaggerOptions>();
             services.AddSwaggerGen();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

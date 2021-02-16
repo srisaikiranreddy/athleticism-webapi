@@ -1,27 +1,26 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using AthleticismWebAPI.DBRepo;
 using System.Text.Json;
+using AthleticismWebAPI.DataAccess;
+using System.Collections.Generic;
 
 namespace AthleticismWebAPI.Controllers
 {
-    [ApiController]
-    [ApiVersion("1.0")]
-    [Route("api/v{version:apiVersion}/[controller]")]
-    public class DataController : ControllerBase
-    {
-        private readonly IDBConnectionRepo _IDBConnectionRepo;
-        public DataController(IDBConnectionRepo dBConnectionRepo)
-        {
-            _IDBConnectionRepo = dBConnectionRepo;
-        }
+    //[ApiController]
+    //[ApiVersion("1.0")]
+    //[Route("api/v{version:apiVersion}/[controller]")]
+    //public class DBController : ControllerBase
+    //{
+    //    private readonly IDBAccessProvider _IDBAccessProvider;
 
-        [HttpGet(Name = nameof(GetDatabaseTime))]
-        public ActionResult GetDatabaseTime()
-        {
-            return Ok(new
-            {
-                text = "Working"
-            });
-        }
-    }
+    //    public DBController(IDBAccessProvider IDBAccessProvider)
+    //    {
+    //        _IDBAccessProvider = IDBAccessProvider;
+    //    }
+
+    //    [HttpGet]
+    //    public string Get()
+    //    {
+    //        return _IDBAccessProvider.CheckDBActive();
+    //    }
+    //}
 }

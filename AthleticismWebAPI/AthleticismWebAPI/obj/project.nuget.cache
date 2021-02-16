@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "t7RxE4BvCsCqeULXo52RIvYzqMdhTPkKF9gX+lrz7aluKZauR4KKT/6h7Pk9JawCIjDC8BIxrFdsTXAs6Zrrvw==",
+  "dgSpecHash": "eo/yl9se+sE4Pex0+YCLPaRr/6hbhlmNho/YNljzRXGFBaqpWwxASOmMm/sl4gkve1fKCEfAFWsx4yGhbCXy4Q==",
   "success": true,
   "projectFilePath": "/Users/saikiranpalle/Documents/GitHub/athleticism-webapi/AthleticismWebAPI/AthleticismWebAPI/AthleticismWebAPI.csproj",
   "expectedPackageFiles": [
@@ -9,14 +9,33 @@
     "/Users/saikiranpalle/.nuget/packages/microsoft.aspnetcore.mvc.versioning/5.0.0/microsoft.aspnetcore.mvc.versioning.5.0.0.nupkg.sha512",
     "/Users/saikiranpalle/.nuget/packages/microsoft.aspnetcore.mvc.versioning.apiexplorer/5.0.0/microsoft.aspnetcore.mvc.versioning.apiexplorer.5.0.0.nupkg.sha512",
     "/Users/saikiranpalle/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
+    "/Users/saikiranpalle/.nuget/packages/microsoft.entityframeworkcore/5.0.2/microsoft.entityframeworkcore.5.0.2.nupkg.sha512",
+    "/Users/saikiranpalle/.nuget/packages/microsoft.entityframeworkcore.abstractions/5.0.2/microsoft.entityframeworkcore.abstractions.5.0.2.nupkg.sha512",
+    "/Users/saikiranpalle/.nuget/packages/microsoft.entityframeworkcore.analyzers/5.0.2/microsoft.entityframeworkcore.analyzers.5.0.2.nupkg.sha512",
+    "/Users/saikiranpalle/.nuget/packages/microsoft.entityframeworkcore.relational/5.0.2/microsoft.entityframeworkcore.relational.5.0.2.nupkg.sha512",
     "/Users/saikiranpalle/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/Users/saikiranpalle/.nuget/packages/microsoft.extensions.caching.abstractions/5.0.0/microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512",
+    "/Users/saikiranpalle/.nuget/packages/microsoft.extensions.caching.memory/5.0.0/microsoft.extensions.caching.memory.5.0.0.nupkg.sha512",
+    "/Users/saikiranpalle/.nuget/packages/microsoft.extensions.configuration.abstractions/5.0.0/microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
+    "/Users/saikiranpalle/.nuget/packages/microsoft.extensions.dependencyinjection/5.0.1/microsoft.extensions.dependencyinjection.5.0.1.nupkg.sha512",
+    "/Users/saikiranpalle/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/5.0.0/microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "/Users/saikiranpalle/.nuget/packages/microsoft.extensions.logging/5.0.0/microsoft.extensions.logging.5.0.0.nupkg.sha512",
+    "/Users/saikiranpalle/.nuget/packages/microsoft.extensions.logging.abstractions/5.0.0/microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
+    "/Users/saikiranpalle/.nuget/packages/microsoft.extensions.options/5.0.0/microsoft.extensions.options.5.0.0.nupkg.sha512",
+    "/Users/saikiranpalle/.nuget/packages/microsoft.extensions.primitives/5.0.0/microsoft.extensions.primitives.5.0.0.nupkg.sha512",
     "/Users/saikiranpalle/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
     "/Users/saikiranpalle/.nuget/packages/newtonsoft.json/12.0.2/newtonsoft.json.12.0.2.nupkg.sha512",
     "/Users/saikiranpalle/.nuget/packages/newtonsoft.json.bson/1.0.2/newtonsoft.json.bson.1.0.2.nupkg.sha512",
+    "/Users/saikiranpalle/.nuget/packages/npgsql/5.0.2/npgsql.5.0.2.nupkg.sha512",
+    "/Users/saikiranpalle/.nuget/packages/npgsql.entityframeworkcore.postgresql/5.0.2/npgsql.entityframeworkcore.postgresql.5.0.2.nupkg.sha512",
     "/Users/saikiranpalle/.nuget/packages/swashbuckle.aspnetcore/6.0.4/swashbuckle.aspnetcore.6.0.4.nupkg.sha512",
     "/Users/saikiranpalle/.nuget/packages/swashbuckle.aspnetcore.swagger/6.0.4/swashbuckle.aspnetcore.swagger.6.0.4.nupkg.sha512",
     "/Users/saikiranpalle/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.0.4/swashbuckle.aspnetcore.swaggergen.6.0.4.nupkg.sha512",
-    "/Users/saikiranpalle/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.0.4/swashbuckle.aspnetcore.swaggerui.6.0.4.nupkg.sha512"
+    "/Users/saikiranpalle/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.0.4/swashbuckle.aspnetcore.swaggerui.6.0.4.nupkg.sha512",
+    "/Users/saikiranpalle/.nuget/packages/system.collections.immutable/5.0.0/system.collections.immutable.5.0.0.nupkg.sha512",
+    "/Users/saikiranpalle/.nuget/packages/system.componentmodel.annotations/5.0.0/system.componentmodel.annotations.5.0.0.nupkg.sha512",
+    "/Users/saikiranpalle/.nuget/packages/system.diagnostics.diagnosticsource/5.0.1/system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512",
+    "/Users/saikiranpalle/.nuget/packages/system.runtime.compilerservices.unsafe/4.6.0/system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512"
   ],
   "logs": []
 }
