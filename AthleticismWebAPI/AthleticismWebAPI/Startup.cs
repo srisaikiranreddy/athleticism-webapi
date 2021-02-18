@@ -14,6 +14,10 @@ using Microsoft.EntityFrameworkCore;
 
 using Swashbuckle.AspNetCore.SwaggerGen;
 using AthleticismWebAPI.DataAccess;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 namespace AthleticismWebAPI
 {
@@ -29,21 +33,57 @@ namespace AthleticismWebAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            
 
+            services.AddCustomCors("AllowAllOrigins");
             services.AddControllers()
                 .AddNewtonsoftJson(options =>
                        options.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver())
-                            .SetCompatibilityVersion(CompatibilityVersion.Version_3_0);           
-
+                            .SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
+            
+            //Pulling connection string 
             services.AddDbContext<PGDBContext>(options => options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddScoped<IReviewAccessProvider, ReviewAccessProvider>();
 
+            //#region Authentication
+            //// For Identity  
+            //services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
+
+            //// Adding Authentication  
+            //services.AddAuthentication(options =>
+            //{
+            //    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+            //    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            //    options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+            //})
+
+            //// Adding Jwt Bearer  
+            //.AddJwtBearer(options =>
+            //{
+            //    options.SaveToken = true;
+            //    options.RequireHttpsMetadata = false;
+            //    options.TokenValidationParameters = new TokenValidationParameters()
+            //    {
+            //        ValidateIssuer = true,
+            //        ValidateAudience = true,
+            //        ValidAudience = Configuration["JWT:ValidAudience"],
+            //        ValidIssuer = Configuration["JWT:ValidIssuer"],
+            //        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["JWT:Secret"]))
+            //    };
+            //});
+            //#endregion
+
+            #region DataModels
+            //Configure DataModels
+            services.AddScoped<IReviewAccessProvider, ReviewAccessProvider>();
+            #endregion
+
+            #region swagger config
+            //Configure Versioning
             services.AddVersioning();
             services.AddTransient<IConfigureOptions<SwaggerGenOptions>, SwaggerOptions>();
             services.AddSwaggerGen();
-            
+            #endregion
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -63,9 +103,10 @@ namespace AthleticismWebAPI
             //}
 
             app.UseHttpsRedirection();
-
             app.UseRouting();
+            app.UseCors("AllowAllOrigins");
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

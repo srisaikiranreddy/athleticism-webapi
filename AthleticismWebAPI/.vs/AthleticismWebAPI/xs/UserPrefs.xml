@@ -1,26 +1,44 @@
 ﻿<Properties StartupConfiguration="{5D05C314-5B8A-45ED-A3B0-371EFE50514D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="AthleticismWebAPI/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AthleticismWebAPI/CommonHelper/CorsExtension.cs">
     <Files>
       <File FileName="AthleticismWebAPI/Controllers/v1/DataController.cs" Line="25" Column="8" />
-      <File FileName="AthleticismWebAPI/Controllers/v1/ReviewController.cs" Line="53" Column="1" />
+      <File FileName="AthleticismWebAPI/Controllers/v1/ReviewController.cs" Line="11" Column="43" />
       <File FileName="AthleticismWebAPI/DataAccess/IReviewAccessProvider.cs" Line="13" Column="9" />
       <File FileName="AthleticismWebAPI/DataAccess/IDBAccessProvider.cs" Line="6" Column="9" />
       <File FileName="AthleticismWebAPI/DataAccess/DBAccessProvider.cs" Line="15" Column="12" />
       <File FileName="AthleticismWebAPI/DataAccess/ReviewAccessProvider.cs" Line="19" Column="40" />
       <File FileName="AthleticismWebAPI/Controllers/v1/WeatherForecastController.cs" Line="39" Column="8" />
-      <File FileName="AthleticismWebAPI/Program.cs" Line="16" Column="1" />
+      <File FileName="AthleticismWebAPI/Program.cs" Line="14" Column="47" />
+      <File FileName="AthleticismWebAPI/CommonHelper/VersioningExtension.cs" Line="1" Column="1" />
+      <File FileName="AthleticismWebAPI/CommonHelper/ApplicationUser.cs" Line="6" Column="48" />
+      <File FileName="AthleticismWebAPI/CommonHelper/ApplicationDbContext.cs" Line="11" Column="1" />
+      <File FileName="AthleticismWebAPI/CommonHelper/UserRoles.cs" Line="8" Column="6" />
+      <File FileName="AthleticismWebAPI/CommonHelper/RegisterModel.cs" Line="16" Column="45" />
+      <File FileName="AthleticismWebAPI/CommonHelper/LoginModel.cs" Line="8" Column="14" />
+      <File FileName="AthleticismWebAPI/CommonHelper/Response.cs" Line="7" Column="44" />
+      <File FileName="AthleticismWebAPI/Controllers/AuthenticateController.cs" Line="131" Column="12" />
+      <File FileName="AthleticismWebAPI/Startup.cs" Line="59" Column="37" />
+      <File FileName="AthleticismWebAPI/appsettings.json" Line="16" Column="61" />
+      <File FileName="AthleticismWebAPI/CommonHelper/CorsExtension.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="AthleticismWebAPI" expanded="True">
             <Node name="AthleticismWebAPI" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True">
+                  <Node name="Npgsql.EntityFrameworkCore.PostgreSQL" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="CommonHelper" expanded="True">
+                <Node name="CorsExtension.cs" selected="True" />
+              </Node>
               <Node name="Controllers" expanded="True">
                 <Node name="v1" expanded="True" />
               </Node>
               <Node name="DataAccess" expanded="True" />
               <Node name="Models" expanded="True" />
-              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>

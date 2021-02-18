@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using AthleticismWebAPI.CommonHelper;
 using AthleticismWebAPI.DataAccess;
 using AthleticismWebAPI.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AthleticismWebAPI.Controllers.v1
 {
+    //[Authorize(Roles = UserRoles.Admin)]
     [ApiController]
     [ApiVersion("1.0")]
     [Route("api/v{version:apiVersion}/[controller]")]
