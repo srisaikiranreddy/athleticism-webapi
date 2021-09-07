@@ -50,3 +50,4 @@
 /Users/saikiranpalle/Documents/GitHub/athleticism-webapi/AthleticismWebAPI/AthleticismWebAPI/obj/Debug/net5.0/ref/AthleticismWebAPI.dll
 /Users/saikiranpalle/Documents/GitHub/athleticism-webapi/AthleticismWebAPI/AthleticismWebAPI/obj/Debug/net5.0/AthleticismWebAPI.pdb
 /Users/saikiranpalle/Documents/GitHub/athleticism-webapi/AthleticismWebAPI/AthleticismWebAPI/obj/Debug/net5.0/AthleticismWebAPI.genruntimeconfig.cache
+/Users/saikiranpalle/Documents/GitHub/athleticism-webapi/AthleticismWebAPI/AthleticismWebAPI/obj/Debug/net5.0/AthleticismWebAPI.csproj.AssemblyReference.cache
